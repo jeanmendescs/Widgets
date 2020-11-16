@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
 const Accordion = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(null); //inicializar state
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const onTitleClick = (index) => {
-    //funcao responsavel por atualizar state pelo click do usuario
     setActiveIndex(index);
   };
 

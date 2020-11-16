@@ -19,9 +19,6 @@ const Search = () => {
           srsearch: term,
         },
       });
-      /* let test = data.query.search;
-      let stripped = test.split(" ");
-      let result = test.replace(/<[^>]+>/g, ""); */
       setResults(data.query.search);
     };
 
@@ -38,7 +35,7 @@ const Search = () => {
         clearTimeout(timeoutID);
       };
     }
-  }, [term]);
+  }, [term, results]);
 
   const renderedResults = results.map((result) => {
     return (

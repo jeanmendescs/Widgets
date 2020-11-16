@@ -25,7 +25,7 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
       <div
         key={option.value}
         className="item"
-        onClick={() => onSelectedChange(option)} //callback p/ atualizar Selected em App.jsx
+        onClick={() => onSelectedChange(option)}
       >
         {option.label}
       </div>
